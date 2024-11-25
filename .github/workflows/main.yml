@@ -91,5 +91,5 @@ jobs:
           server: fklas4s22.mid-ica.nl
           username: 576682@klas4s22.mid-ica.nl
           password: FQZ10hr5
-          local-dir: ./public
+          local-dir: ./public/
           server-dir: /flextyy/
