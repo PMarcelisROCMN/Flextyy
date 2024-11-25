@@ -99,5 +99,5 @@ jobs:
             node_modules/**
             storage/debugbar/**
             tests/**
-            vendor/bin/**
+            vendor/**
             *.md
