@@ -91,5 +91,13 @@ jobs:
           server: fklas4s22.mid-ica.nl
           username: 576682@klas4s22.mid-ica.nl
           password: FQZ10hr5
-          local-dir: ./public/
+          local-dir: ./ # This should include all files in your project
           server-dir: /flextyy/
+          exclude: |
+            .git*
+            node_modules/
+            storage/debugbar/*
+            tests/
+            vendor/bin/
+            *.md
+    
