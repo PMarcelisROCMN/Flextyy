@@ -45,7 +45,7 @@ jobs:
       - name: Build assets
         run: npm run build
 
-        
+
       # 3. Install Composer dependencies
       - name: Install Composer dependencies
         run: composer install --optimize-autoloader --no-dev
@@ -54,8 +54,8 @@ jobs:
       # - name: Set environment file
       #   run: cp .env.example .env
 
-      - name: Generate application key
-        run: php artisan key:generate
+      # - name: Generate application key
+      #   run: php artisan key:generate
 
       # 5. Set up Node.js environment
       - name: Set up Node.js
