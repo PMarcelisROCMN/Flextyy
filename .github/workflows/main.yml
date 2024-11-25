@@ -39,7 +39,7 @@ jobs:
 
       # 3. Install Composer dependencies
       - name: Install Composer dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
+        run: composer install --optimize-autoloader --no-dev
 
       # 4. Set up Laravel environment
       - name: Set environment file
