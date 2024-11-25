@@ -94,10 +94,10 @@ jobs:
           local-dir: ./ # This should include all files in your project
           server-dir: /flextyy/
           exclude: |
+            exclude: |
             .git*
-            node_modules/
-            storage/debugbar/*
-            tests/
-            vendor/bin/
+            node_modules/**
+            storage/debugbar/**
+            tests/**
+            vendor/bin/**
             *.md
-    
