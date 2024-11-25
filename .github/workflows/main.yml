@@ -94,7 +94,7 @@ jobs:
           username: 576682@klas4s22.mid-ica.nl
           password: FQZ10hr5
           local-dir: ./ # This should include all files in your project
-          server-dir: /flextyy/
+          server-dir: /flextyy/public/
           exclude: |
             exclude: |
             .git*
