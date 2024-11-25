@@ -37,13 +37,22 @@ jobs:
           php-version: '8.2'
           extensions: mbstring, bcmath, pdo, pdo_mysql, dom, curl, libxml, zip, pcntl, soap, intl, gd, exif, iconv
 
+      # 6. Install NPM dependencies
+      - name: Install NPM dependencies
+        run: npm install
+
+      # 7. Build frontend assets
+      - name: Build assets
+        run: npm run build
+
+        
       # 3. Install Composer dependencies
       - name: Install Composer dependencies
         run: composer install --optimize-autoloader --no-dev
 
-      # 4. Set up Laravel environment
-      - name: Set environment file
-        run: cp .env.example .env
+      # # 4. Set up Laravel environment
+      # - name: Set environment file
+      #   run: cp .env.example .env
 
       - name: Generate application key
         run: php artisan key:generate
@@ -54,13 +63,6 @@ jobs:
         with:
           node-version: '18'
 
-      # 6. Install NPM dependencies
-      - name: Install NPM dependencies
-        run: npm install
-
-      # 7. Build frontend assets
-      - name: Build assets
-        run: npm run build
 
       # 8. Run database migrations
     #   - name: Run database migrations
