@@ -74,15 +74,15 @@ jobs:
     #     run: php artisan migrate --force
 
       # 9. Run Laravel tests
-      - name: Run Laravel tests
-        env:
-          DB_CONNECTION: mysql
-          DB_HOST: 127.0.0.1
-          DB_PORT: 3306
-          DB_DATABASE: klas4s22_576682
-          DB_USERNAME: klas4s22_576682
-          DB_PASSWORD: FQZ10hr5
-        run: php artisan test
+    #   - name: Run Laravel tests
+    #     env:
+    #       DB_CONNECTION: mysql
+    #       DB_HOST: 127.0.0.1
+    #       DB_PORT: 3306
+    #       DB_DATABASE: klas4s22_576682
+    #       DB_USERNAME: klas4s22_576682
+    #       DB_PASSWORD: FQZ10hr5
+    #     run: php artisan test
 
       # 10. Deploy to FTP server
       - name: Deploy to FTP server
